@@ -1,0 +1,80 @@
+{
+  "lab_name": "German Mittelstand Packaging Line OT Access Assurance Lab",
+  "window_minutes": 15,
+  "thresholds": {
+    "same_source_account_failures": 3,
+    "spray_unique_accounts": 3,
+    "distributed_sources_per_account": 2
+  },
+  "assets": {
+    "CORP-WS-01": {
+      "zone": "enterprise_it",
+      "purdue_level": "L4",
+      "role": "Corporate workstation"
+    },
+    "IDMZ-JUMP-01": {
+      "zone": "idmz",
+      "purdue_level": "L3.5",
+      "role": "Industrial DMZ jump host"
+    },
+    "ENG-WS-01": {
+      "zone": "ot_operations",
+      "purdue_level": "L3",
+      "role": "Engineering workstation"
+    },
+    "ENG-WS-02": {
+      "zone": "ot_operations",
+      "purdue_level": "L3",
+      "role": "Second engineering workstation"
+    },
+    "HIST-PACK-01": {
+      "zone": "ot_operations",
+      "purdue_level": "L3",
+      "role": "Packaging line historian"
+    },
+    "HMI-PACK-01": {
+      "zone": "supervisory",
+      "purdue_level": "L2",
+      "role": "Packaging line HMI"
+    },
+    "PLC-PACK-01": {
+      "zone": "basic_control",
+      "purdue_level": "L1",
+      "role": "Packaging line PLC; inventory context only"
+    }
+  },
+  "allowed_conduits": [
+    {
+      "source_zone": "enterprise_it",
+      "target_zone": "idmz",
+      "description": "Approved enterprise-to-industrial-DMZ access"
+    },
+    {
+      "source_zone": "idmz",
+      "target_zone": "ot_operations",
+      "description": "Approved maintenance access via the industrial DMZ"
+    },
+    {
+      "source_zone": "ot_operations",
+      "target_zone": "supervisory",
+      "description": "Approved engineering-to-supervisory access"
+    },
+    {
+      "source_zone": "supervisory",
+      "target_zone": "basic_control",
+      "description": "Illustrative supervisory-to-control zone path"
+    }
+  ],
+  "approved_maintenance_windows": [
+    {
+      "change_id": "CHG-SIM-001",
+      "ticket": "SIM-OT-014",
+      "approver": "Simulated OT Change Owner",
+      "username": "svc_maint",
+      "source_asset": "IDMZ-JUMP-01",
+      "target_asset": "ENG-WS-01",
+      "start_utc": "2026-10-12T11:00:00Z",
+      "end_utc": "2026-10-12T11:30:00Z"
+    }
+  ]
+}

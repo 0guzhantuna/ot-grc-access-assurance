@@ -1,0 +1,13 @@
+{"event_id":"EVT-001","timestamp":"2026-10-12T08:01:00Z","event_type":"auth_failure","source_ip":"10.30.10.11","source_asset":"ENG-WS-01","target_asset":"HMI-PACK-01","username":"operator"}
+{"event_id":"EVT-002","timestamp":"2026-10-12T08:03:00Z","event_type":"auth_failure","source_ip":"10.30.10.11","source_asset":"ENG-WS-01","target_asset":"HMI-PACK-01","username":"operator"}
+{"event_id":"EVT-003","timestamp":"2026-10-12T08:05:00Z","event_type":"auth_failure","source_ip":"10.30.10.11","source_asset":"ENG-WS-01","target_asset":"HMI-PACK-01","username":"operator"}
+{"event_id":"EVT-004","timestamp":"2026-10-12T08:07:00Z","event_type":"auth_success","source_ip":"10.30.10.11","source_asset":"ENG-WS-01","target_asset":"HMI-PACK-01","username":"operator"}
+{"event_id":"EVT-005","timestamp":"2026-10-12T09:00:00Z","event_type":"auth_failure","source_ip":"10.30.10.12","source_asset":"ENG-WS-02","target_asset":"HMI-PACK-01","username":"line_operator"}
+{"event_id":"EVT-006","timestamp":"2026-10-12T09:02:00Z","event_type":"auth_failure","source_ip":"10.30.10.12","source_asset":"ENG-WS-02","target_asset":"HMI-PACK-01","username":"maintenance"}
+{"event_id":"EVT-007","timestamp":"2026-10-12T09:04:00Z","event_type":"auth_failure","source_ip":"10.30.10.12","source_asset":"ENG-WS-02","target_asset":"HMI-PACK-01","username":"supervisor"}
+{"event_id":"EVT-008","timestamp":"2026-10-12T10:10:00Z","event_type":"auth_failure","source_ip":"10.30.5.5","source_asset":"IDMZ-JUMP-01","target_asset":"HIST-PACK-01","username":"svc_historian"}
+{"event_id":"EVT-009","timestamp":"2026-10-12T10:13:00Z","event_type":"auth_failure","source_ip":"10.30.10.11","source_asset":"ENG-WS-01","target_asset":"HIST-PACK-01","username":"svc_historian"}
+{"event_id":"EVT-010","timestamp":"2026-10-12T10:25:00Z","event_type":"auth_failure","source_ip":"192.0.2.44","source_asset":"CORP-WS-01","target_asset":"HMI-PACK-01","username":"remote_admin"}
+{"event_id":"EVT-011","timestamp":"2026-10-12T11:05:00Z","event_type":"auth_failure","source_ip":"10.30.5.5","source_asset":"IDMZ-JUMP-01","target_asset":"ENG-WS-01","username":"svc_maint"}
+{"event_id":"EVT-012","timestamp":"2026-10-12T11:08:00Z","event_type":"auth_failure","source_ip":"10.30.5.5","source_asset":"IDMZ-JUMP-01","target_asset":"ENG-WS-01","username":"svc_maint"}
+{"event_id":"EVT-013","timestamp":"2026-10-12T11:10:00Z","event_type":"auth_failure","source_ip":"10.30.5.5","source_asset":"IDMZ-JUMP-01","target_asset":"ENG-WS-01","username":"svc_maint"}
